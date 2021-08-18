@@ -68,7 +68,7 @@ public class TempServlet extends HttpServlet {
                         "<body>" +
                         "one = " + one +
                         ", two = " + two +
-                        "<form action='temp' method='get'>" +
+                        "<form action='temp' method='post'>" +
                         "<input type='text' name = 'one'/>" +
                         "<input type='text' name = 'two'/>" +
                         "<input type='submit' name = 'submit'/>" +
