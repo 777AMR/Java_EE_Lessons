@@ -2,30 +2,25 @@ package servlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.Enumeration;
 
 @WebServlet("/temp")
 public class TempServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Cookie[] cookies = req.getCookies();
-        for (Cookie s: cookies) {
-            System.out.println(s.getName());
-            System.out.println(s.getValue());
-            System.out.println(s.getMaxAge());
+        HttpSession session = req.getSession();
+        Enumeration<String> attributeNames = session.getAttributeNames();
+        while (attributeNames.hasMoreElements()) {
+            String attributeName = attributeNames.nextElement();
+            System.out.println(attributeName + " = " + session.getAttribute(attributeName));
         }
-
-        Cookie cookie = new Cookie("name","value");
-//        cookie.setPath("/temp.html");
-//        cookie.setDomain("my.localhost.com");
-//        cookie.setMaxAge(24 * 60 * 60);
-//        cookie.setSecure(true);
-        resp.addCookie(cookie);
-
+        session.setAttribute("one", "two");
+        System.out.println(session.getMaxInactiveInterval());
     }
 }
