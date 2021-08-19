@@ -6,34 +6,6 @@
     <title>Title</title>
 </head>
 <body>
-<%--    <%! int i = 5;%>--%>
-
-<%--    <%! private void doJob() {--%>
-<%--        System.out.println("hello");--%>
-<%--    }%>--%>
-
-<%--    <%= new Date() %>--%>
-
-<%--    <%= JSPHelper.minux(5, 3) %>--%>
-
-<%--    <%--%>
-<%--        class Student{--%>
-<%--            String name;--%>
-
-<%--            public String getName() {--%>
-<%--                return name;--%>
-<%--            }--%>
-
-<%--            public void setName(String name) {--%>
-<%--                this.name = name;--%>
-<%--            }--%>
-<%--        }--%>
-<%--    %>--%>
-
-<%--    <%= new Student()%>--%>
-
-<%--    <% if (Math.random() > 5){ %>--%>
-<%--        hello world--%>
-<%--    <% } %>--%>
+    hello Max 1
 </body>
 </html>
