@@ -6,6 +6,8 @@
     <title>Title</title>
 </head>
 <body>
-    hello Max 1
+    <%=request.getMethod()%>
+    <%=session.getAttribute("")%>
+    <%=response.setStatus(200)%>
 </body>
 </html>
