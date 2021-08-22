@@ -4,32 +4,42 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <!--    <servlet>-->
-    <!--        <servlet-name>HelloServlet</servlet-name>-->
-    <!--        <servlet-class>servlets.HelloServlet</servlet-class>-->
-    <!--    </servlet>-->
-    <!--    <servlet-mapping>-->
-    <!--        <servlet-name>HelloServlet</servlet-name>-->
-    <!--        <url-pattern>/hello</url-pattern>-->
-    <!--    </servlet-mapping>-->
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>servlets.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
 
-    <!--    <servlet>-->
-    <!--        <servlet-name>HtmlServlet</servlet-name>-->
-    <!--        <servlet-class>servlets.ServletLiveCycle</servlet-class>-->
-    <!--    </servlet>-->
-    <!--    <servlet-mapping>-->
-    <!--        <servlet-name>HtmlServlet</servlet-name>-->
-    <!--        <url-pattern>/html</url-pattern>-->
-    <!--    </servlet-mapping>-->
+    <welcome-file-list>
+        <welcome-file>/html/default.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
 
-    <jsp-config>
-        <jsp-property-group>
-            <url-pattern>/jsp/*jsp</url-pattern>
-            <el-ignored>false</el-ignored>
-        </jsp-property-group>
-        <jsp-property-group>
-            <url-pattern>*.jsp</url-pattern>
-            <scripting-invalid>false</scripting-invalid>
-        </jsp-property-group>
-    </jsp-config>
+    <session-config>
+        <session-timeout>20</session-timeout>
+    </session-config>
+
+    <icon>
+        <small-icon>/img/icon16.gif</small-icon>
+        <large-icon>/img/icon32.gif</large-icon>
+    </icon>
+
+    <display-name>Rare books</display-name>
+
+    <description>
+        Web development is the building and maintenance of websites;
+        it’s the work that happens behind the scenes to make a website look great,
+        work fast and perform well with a seamless user experience.
+    </description>
+
+    <mime-mapping>
+        <extension>html</extension>
+        <mime-type>application/x-fubar</mime-type>
+    </mime-mapping>
+
+    <distributable />
 </web-app>
