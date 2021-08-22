@@ -4,10 +4,8 @@
     <title>Title</title>
 </head>
 <body>
-    <%--<%@ include file="MyJsp.jsp"%>-prepocessor--%>
-    <jsp:include page="MyJsp.jsp"/>-request
-    <jsp:include page="/hello"/>
-    <jsp:include page="/WEB-INF/text.txt"/>
+    <jsp:text>just text</jsp:text>
+    <jsp:forward page="MyJsp.jsp"/>
 
 </body>
 </html>
