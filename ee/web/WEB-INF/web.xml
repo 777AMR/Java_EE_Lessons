@@ -83,4 +83,15 @@
         <location>/jsp/Error.jsp</location>
     </error-page>
 
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>/jsp/Page.jsp</url-pattern>
+            <include-prelude>/jsp/Header.jsp</include-prelude>
+        </jsp-property-group>
+        <jsp-property-group>
+            <url-pattern>/jsp/Page.jsp</url-pattern>
+            <include-coda>/jsp/Footer.jsp</include-coda>
+        </jsp-property-group>
+    </jsp-config>
+
 </web-app>
