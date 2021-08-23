@@ -143,19 +143,27 @@
 
 
 
-    <filter>
-        <filter-name>MyNewFilter</filter-name>
-        <filter-class>jsp.MyNewFilter</filter-class>
-        <init-param>
-            <param-name>name</param-name>
-            <param-value>Max</param-value>
-        </init-param>
-    </filter>
-    <filter-mapping>
-        <filter-name>MyNewFilter</filter-name>
-        <url-pattern>/MyNewFilter</url-pattern>
-        <dispatcher>REQUEST</dispatcher>
-    </filter-mapping>
+<!--    <servlet>-->
+<!--        <servlet-name>filterServlet</servlet-name>-->
+<!--        <servlet-class>servlets.FilterServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>filterServlet</servlet-name>-->
+<!--        <url-pattern>/filterServlet</url-pattern>-->
+<!--    </servlet-mapping>-->
+<!--    <filter>-->
+<!--        <filter-name>MyNewFilter</filter-name>-->
+<!--        <filter-class>jsp.MyNewFilter</filter-class>-->
+<!--        <init-param>-->
+<!--            <param-name>name</param-name>-->
+<!--            <param-value>Max</param-value>-->
+<!--        </init-param>-->
+<!--    </filter>-->
+<!--    <filter-mapping>-->
+<!--        <filter-name>MyNewFilter</filter-name>-->
+<!--        <url-pattern>/MyNewFilter</url-pattern>-->
+<!--        <dispatcher>REQUEST</dispatcher>-->
+<!--    </filter-mapping>-->
 
 
 
