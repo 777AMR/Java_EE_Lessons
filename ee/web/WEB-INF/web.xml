@@ -140,4 +140,29 @@
         <servlet-name>AuthServlet</servlet-name>
         <url-pattern>/auth</url-pattern>
     </servlet-mapping>
+
+
+
+    <filter>
+        <filter-name>MyNewFilter</filter-name>
+        <filter-class>jsp.MyNewFilter</filter-class>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>Max</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>MyNewFilter</filter-name>
+        <url-pattern>/MyNewFilter</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+
+
+
+
+
+
+
+
+
 </web-app>
