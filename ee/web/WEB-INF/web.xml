@@ -31,4 +31,51 @@
         <url-pattern>/mapped/bar/*</url-pattern>
     </servlet-mapping>
 
+
+
+    <context-param>
+        <param-name>email</param-name>
+        <param-value>mail@gmail.com</param-value>
+    </context-param>
+
+
+
+
+
+    <servlet>
+        <servlet-name>init</servlet-name>
+        <servlet-class>servlets.InitServlet</servlet-class>
+        <init-param>
+            <param-name>namespace</param-name>
+            <param-value>Max</param-value>
+        </init-param>
+        <init-param>
+            <param-name>age</param-name>
+            <param-value>23</param-value>
+        </init-param>
+<!--        <load-on-startup>0</load-on-startup>-->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>init</servlet-name>
+        <url-pattern>/init</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>initJsp</servlet-name>
+        <jsp-file>/jsp/Init.jsp</jsp-file>
+        <init-param>
+            <param-name>namespace</param-name>
+            <param-value>Max</param-value>
+        </init-param>
+        <init-param>
+            <param-name>age</param-name>
+            <param-value>23</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>initJsp</servlet-name>
+        <url-pattern>/thisIsJsp</url-pattern>
+    </servlet-mapping>
+
 </web-app>
