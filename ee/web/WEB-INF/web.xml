@@ -5,41 +5,30 @@
          version="4.0">
 
     <servlet>
-        <servlet-name>HelloServlet</servlet-name>
-        <servlet-class>servlets.HelloServlet</servlet-class>
+        <servlet-name>a</servlet-name>
+        <servlet-class>mapped.A</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>HelloServlet</servlet-name>
-        <url-pattern>/hello</url-pattern>
+        <servlet-name>a</servlet-name>
+        <url-pattern>/mapped/*</url-pattern>
     </servlet-mapping>
 
-    <welcome-file-list>
-        <welcome-file>/html/default.html</welcome-file>
-        <welcome-file>index.jsp</welcome-file>
-        <welcome-file>index.html</welcome-file>
-    </welcome-file-list>
+    <servlet>
+        <servlet-name>b</servlet-name>
+        <servlet-class>mapped.B</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>b</servlet-name>
+        <url-pattern>/mapped/b</url-pattern>
+    </servlet-mapping>
 
-    <session-config>
-        <session-timeout>20</session-timeout>
-    </session-config>
+    <servlet>
+        <servlet-name>c</servlet-name>
+        <servlet-class>mapped.C</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>c</servlet-name>
+        <url-pattern>/mapped/bar/*</url-pattern>
+    </servlet-mapping>
 
-    <icon>
-        <small-icon>/img/icon16.gif</small-icon>
-        <large-icon>/img/icon32.gif</large-icon>
-    </icon>
-
-    <display-name>Rare books</display-name>
-
-    <description>
-        Web development is the building and maintenance of websites;
-        it’s the work that happens behind the scenes to make a website look great,
-        work fast and perform well with a seamless user experience.
-    </description>
-
-    <mime-mapping>
-        <extension>html</extension>
-        <mime-type>application/x-fubar</mime-type>
-    </mime-mapping>
-
-    <distributable />
 </web-app>
