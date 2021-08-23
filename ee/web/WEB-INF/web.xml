@@ -94,4 +94,23 @@
         </jsp-property-group>
     </jsp-config>
 
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>This is real name</realm-name>
+    </login-config>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>SecureJsp</web-resource-name>
+            <url-pattern>/secure/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-role>
+        <role-name>root</role-name>
+    </security-role>
+    <security-role>
+        <role-name>admin</role-name>
+    </security-role>
 </web-app>
