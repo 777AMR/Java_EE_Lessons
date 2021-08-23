@@ -95,8 +95,11 @@
     </jsp-config>
 
     <login-config>
-        <auth-method>BASIC</auth-method>
-        <realm-name>This is real name</realm-name>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/secure/login-page.jsp</form-login-page>
+            <form-error-page>/secure/login-error.jsp</form-error-page>
+        </form-login-config>
     </login-config>
     <security-constraint>
         <web-resource-collection>

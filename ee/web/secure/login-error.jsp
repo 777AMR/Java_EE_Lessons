@@ -4,6 +4,6 @@
     <title>Title</title>
 </head>
 <body>
-
+    This is error page
 </body>
 </html>
